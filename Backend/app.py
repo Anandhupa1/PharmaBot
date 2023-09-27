@@ -1,8 +1,10 @@
 
 from flask import Flask,request,jsonify, abort
+from flask_cors import CORS
 import os
 import openai
 app = Flask(__name__)
+CORS(app)
 from model import UserProfile  # Import the UserProfile model
 from bson import ObjectId
 from model import Chat 

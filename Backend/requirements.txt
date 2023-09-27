@@ -5,6 +5,7 @@ colorama==0.4.6
 distlib==0.3.7
 filelock==3.12.4
 Flask==2.3.3
+Flask-Cors==4.0.0
 Flask-Login==0.6.2
 Flask-Migrate==4.0.5
 Flask-Script==2.0.6
