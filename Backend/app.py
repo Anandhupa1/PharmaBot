@@ -12,6 +12,9 @@ from dotenv import load_dotenv
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+@app.route("/")
+def home():
+    return "Pharmabot Flask server"
 
 @app.route('/',methods=["POST"])
 def chat():
@@ -197,5 +200,5 @@ def get_chat(chat_id):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
