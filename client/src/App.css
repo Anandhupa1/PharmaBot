@@ -1,0 +1,90 @@
+
+body{
+  /* background-color: #322659 ; */
+  /* background-image: url("https://w0.peakpx.com/wallpaper/229/289/HD-wallpaper-3d-green-white-balls-3d-glossy-balls-3d-balls-texture-creative-green-white-3d-background-green-3d-ball.jpg"); */
+}
+.App{
+  background-color: #fafbff;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  padding: 35px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.shadow{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background-color: #fffefe !important;
+}
+.codeMirror{
+  height: 98%;
+  width: 96%;
+  margin: 10px;
+}
+
+.markDown{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+  overflow-x: auto; 
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.chat-bubble {
+  background-color:#5b078a;
+  padding:16px 28px;
+  -webkit-border-radius: 20px;
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-radius: 20px;
+  -moz-border-radius-bottomleft: 2px;
+  border-radius: 20px;
+  border-bottom-left-radius: 2px;
+  display:inline-block;
+  color: #fff !important;
+}
+.typing {
+  align-items: center;
+  display: flex;
+  height: 17px;
+}
+.typing .dot {
+  animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
+  background-color: #fff ; 
+  border-radius: 50%;
+  height: 7px;
+  margin-right: 4px;
+  vertical-align: middle;
+  width: 7px;
+  display: inline-block;
+}
+.typing .dot:nth-child(1) {
+  animation-delay: 200ms;
+}
+.typing .dot:nth-child(2) {
+  animation-delay: 300ms;
+}
+.typing .dot:nth-child(3) {
+  animation-delay: 400ms;
+}
+.typing .dot:last-child {
+  margin-right: 0;
+}
+
+@keyframes mercuryTypingAnimation {
+  0% {
+    transform: translateY(0px);
+    background-color:#fff; 
+  }
+  28% {
+    transform: translateY(-7px);
+    background-color:#fff; 
+  }
+  44% {
+    transform: translateY(0px);
+    background-color: #fff; 
+  }
+}
