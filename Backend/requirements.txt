@@ -4,3 +4,4 @@ openai
 tiktoken
 pymongo
 python-dotenv
+langchain
